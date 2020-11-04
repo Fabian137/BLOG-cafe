@@ -1,0 +1,182 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/* GLOBALES */
+
+h1,h2,h3,h4{
+    font-family: 'PT Sans', sans-serif;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4.4rem;
+}
+h3{
+    font-size: 4rem;
+}
+h4{
+    font-size: 3.6rem;
+}
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 80.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* UTILIDADES */
+.nomargin{
+    margin: 0;
+}
+/*Botones*/
+.btn{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'PT-Sans', sans-serif;
+}
+@media (min-width: 768px){
+    .btn{
+        display: inline-block;
+    }
+}
+.btn-uno{
+    background-color: #000000;
+    margin-bottom: 3rem;
+}
+.btn-d{
+    background-color: #794836;
+}
+
+/* ACABAN GLOBALES */
+
+/* header */ 
+.siteheader{
+    background-image: url(../img/banner.jpg);
+    background-position: center center;
+    height: 50rem;
+    background-size: cover;
+}
+.barra a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.barra h1{
+    text-align: center;
+    font-weight: 400;
+}
+.barra a:hover{
+    color: #271a02;
+}
+.luna{
+    font-weight: 700;
+}
+.navegacion a{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.outext{
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 15rem;
+}
+.outext p{
+    font-size: 2rem;
+}
+/* header */ 
+@media (min-width:768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+@media (min-width:768px){    
+    .navegacion{
+        display: flex;
+    }
+    .navegacion a{
+    margin-left: 1.5rem;
+    }
+
+}
+
+/* MAIN */
+.principal-contein{
+    display: flex;
+    flex-wrap: wrap;
+}
+.enter-blog{
+    border-bottom: 3px solid #e1e1e1;
+    margin-bottom: 2.5rem;
+}
+.enter-blog:last-of-type{
+    border-bottom: none;
+}
+.blog,.cursos{
+    flex: 0 0 100%;
+}
+.cursos{
+    order: -1;
+}
+@media (min-width:768px){
+    .principal-contein{
+        justify-content: space-between;
+    }
+    .blog{
+        flex-basis: 60%;
+    }
+    .cursos{
+        flex-basis: calc(40% - 3.5rem);
+        order:1;
+    }
+}
+.cursos-lists{
+    list-style: none;
+    padding: 0;
+}
+.curso{
+    border-bottom: 3px solid #e1e1e1;
+    padding-bottom: 2.5rem;
+}
+.curso:last-of-type{
+    border-bottom: none;
+}
+.cursos h2, h4{
+    line-height: 1.5;
+}
+.curso{
+    font-family: 'PT-Sans', sans-serif;
+    font-weight: 700;
+}
+.curso p span{
+    font-weight: 400;
+}
+
+/* FOOTER */
+footer{
+    background-color: #000000;
+    padding: 1rem 0 3rem 0;
+}
+
+
+/* end FOOTER */
