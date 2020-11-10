@@ -26,6 +26,7 @@ h3{
 }
 h4{
     font-size: 3.6rem;
+    margin: 0;
 }
 img{
     max-width: 100%;
@@ -40,6 +41,39 @@ img{
 .nomargin{
     margin: 0;
 }
+.centertext{
+    text-align:center;
+}
+
+/* Grif*/
+
+@media (min-width: 768px){
+    .grid{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2.5rem;
+    }
+    .centrar-columnas{
+        justify-content: center;
+    }
+    .columnas-4{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8{
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10{
+        flex: 0 0 calc(83.3% - 1rem)
+    }
+    .columnas-12{
+        flex: 0 0 calc(100% - 1rem)
+    }
+
+}
 /*Botones*/
 .btn{
     display: block;
@@ -50,6 +84,10 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'PT-Sans', sans-serif;
+}
+.btn:hover{
+    color: #491679;
+    cursor: pointer;
 }
 @media (min-width: 768px){
     .btn{
@@ -63,7 +101,6 @@ img{
 .btn-d{
     background-color: #794836;
 }
-
 /* ACABAN GLOBALES */
 
 /* header */ 
@@ -171,12 +208,46 @@ img{
 .curso p span{
     font-weight: 400;
 }
+span{
+    font-weight: bold;
+}
 
 /* FOOTER */
 footer{
     background-color: #000000;
     padding: 1rem 0 3rem 0;
+    margin-top: 2rem;
 }
-
-
 /* end FOOTER */
+/* FormularioCONTACTO*/
+
+.forms-contact{
+    background-color: #ffffff;
+    padding: 3rem;
+}
+@media (min-width:768px){   
+    .forms-contact{
+        margin-top: -10rem;
+    }
+}
+.forms-contact .campo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.forms-contact .campo label{
+    flex: 0 0 8rem;
+}
+.forms-contact .campo input:not([type="submit"]), 
+.forms-contact .campo textarea{
+    flex:1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.forms-contact .campo textarea{
+    height: 20rem;
+}
+.forms-contact .enviar{
+    display: flex;
+    justify-content: flex-end;
+}
